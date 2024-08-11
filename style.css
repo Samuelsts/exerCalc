@@ -6,6 +6,13 @@
     font-size: large;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -13,21 +20,64 @@
 }
 
 .calc{
-
+    height: 340px;
+    width: 240px;
+    border-radius: 26px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  7px 7px 14px #b8b8b8,-7px -7px 14px #ffffff;
 }
 
 .nome{
-
+    width: 225px;
+    margin: auto;
 }
 
 .display_area{
+    width: 225px;
+    margin: auto;
+    
+}
 
+.display{
+    width: 215px;
+    background-color: #02484d;
+    color: azure;
+    text-align: right;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: monospace;
+    font-size: large;
 }
 
 .teclas_area{
-
+    width: 225px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 5px;
 }
 
 .tecla{
-    
+    color: aliceblue;
+    background-color: #007b91;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.teclaOp{
+    background-color: #18282b !important;
+}
+
+
+.tecla:hover{
+    background-color:  #06a6ce!important;
+    color: azure;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.teclaOp:hover{
+    background-color: #02646b!important;
 }
