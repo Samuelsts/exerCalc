@@ -5,6 +5,7 @@ const display =document.querySelector('.display');
 const tOn =document.querySelector('#ton');
 const tLimpar =document.querySelector('#tlimpar');
 const tigual =document.querySelector('#tigual');
+const tCp=document.querySelector('#tcp');
 
 
 let sinal=false
@@ -62,4 +63,8 @@ tigual.addEventListener('click',(evt)=>{
     decimal=false
     const res=eval(display.innerHTML)
     display.innerHTML=res
+})
+
+tcp.addEventListener("click",(evt)=>{
+    navigator.clipboard.writeText(display.innerHTML)
 })
